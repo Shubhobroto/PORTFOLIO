@@ -78,7 +78,7 @@ export default function GitHubProfile() {
       </div>
 
       {/* ---------- Highlight Section ---------- */}
-      <div className="bg-gradient-to-r from-blue-100 via-indigo-50 to-purple-100 p-4 rounded-lg shadow-inner border border-white/70 text-center w-full max-w-5xl">
+      <div className="bg-linear-to-r from-blue-100 via-indigo-50 to-purple-100 p-4 rounded-lg shadow-inner border border-white/70 text-center w-full max-w-5xl">
         <p className="text-gray-700 text-sm leading-relaxed">
           <span className="font-semibold text-gray-800">
             ✨ 120,000+ lines of production code
