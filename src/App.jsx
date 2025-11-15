@@ -24,7 +24,7 @@ import Education from "./components/dialogs/Education";
 import Achievements from "./components/dialogs/Achievements";
 import Extracurricular from "./components/dialogs/Extracurricular";
 import CodingProfiles from "./components/dialogs/CodingProfiles";
-import GitHubProfile from "./components/dialogs/githubProfile";
+import GitHubProfile from "./components/dialogs/GithubProfile";
 import Certificates from "./components/dialogs/Certificates";
 import ContactForm from "./components/dialogs/ContactForm";
 import Me from "./components/dialogs/Me";
