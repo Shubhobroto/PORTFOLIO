@@ -20,6 +20,7 @@ export default function WorkExperience() {
         "Tuned JVM and container buildpacks, cutting microservice startup time ≈ 50% and enhancing elasticity under peak workloads.",
         "Developed full-stack geospatial visualization tools (React + MapLibre + PostGIS backend) for real-time system analytics and debugging.",
       ],
+      link: "https://www.daimlertruck.com/en",
     },
     {
       company: "Daimler Truck Innovation Center India",
@@ -33,6 +34,7 @@ export default function WorkExperience() {
         "Delivered Maven-packaged utilities with full JUnit coverage.",
         "Benchmarked Apache Commons/Guava replacements with improved performance.",
       ],
+      link: "https://www.daimlertruck.com/en",
     },
     {
       company: "CodeSpeedy",
@@ -44,6 +46,7 @@ export default function WorkExperience() {
         "Created code samples and visual explanations.",
         "Improved content accuracy and educational clarity.",
       ],
+      link: "https://www.codespeedy.com/",
     },
     {
       company: "Girl Code It",
@@ -55,6 +58,7 @@ export default function WorkExperience() {
         "Conducted sessions on recursion, dynamic programming.",
         "Guided learners on debugging and clean coding.",
       ],
+      link: "https://www.linkedin.com/company/girl-code-it/posts/?feedView=all",
     },
     {
       company: "DoSelect",
@@ -66,6 +70,7 @@ export default function WorkExperience() {
         "Designed test cases ensuring fairness.",
         "Checked edge cases, time complexity & correctness.",
       ],
+      link: "https://doselect.com/",
     },
     {
       company: "PrepJunction",
@@ -77,13 +82,13 @@ export default function WorkExperience() {
         "Improved responsiveness and load performance.",
         "Enhanced SEO and user experience.",
       ],
+      link: "https://www.linkedin.com/company/prepjunction/",
     },
   ];
 
   return (
     <div className="h-full overflow-y-auto px-4 py-5 bg-[#f9fbff] rounded-md">
       <div className="space-y-6">
-
         {experiences.map((exp, index) => (
           <div
             key={index}
@@ -95,10 +100,12 @@ export default function WorkExperience() {
             "
           >
             {/* Logo */}
-            <div className="shrink-0 w-20 h-20 sm:w-16 sm:h-16 mx-auto sm:mx-0 
+            <div
+              className="shrink-0 w-20 h-20 sm:w-16 sm:h-16 mx-auto sm:mx-0 
                             flex items-center justify-center 
                             bg-gray-50 border border-gray-200 
-                            rounded-md overflow-hidden">
+                            rounded-md overflow-hidden"
+            >
               <img
                 src={exp.logo}
                 alt="Company Logo"
@@ -125,14 +132,18 @@ export default function WorkExperience() {
               {/* Footer */}
               <div className="mt-3 text-xs text-gray-500 border-t pt-2 flex justify-between items-center">
                 <span>{exp.duration}</span>
-                <button className="text-blue-600 font-medium hover:underline">
+                <a
+                  href={exp.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 font-medium hover:underline"
+                >
                   About Employer
-                </button>
+                </a>
               </div>
             </div>
           </div>
         ))}
-
       </div>
     </div>
   );
