@@ -6,15 +6,15 @@ export default function Achievements() {
   const daimlerCertificates = [
     {
       title:
-        "Consistent Effort & Reliability — Significant Contribution in Project Deliverables (30 Dec 2024)",
-      file: "/assets/certificates/Consistent-Effort-Deliverables.png",
-      thumbnail: "/assets/certificates/Consistent-Effort-Deliverables.png",
-    },
-    {
-      title:
         "ACE - Trailblazer Award — Connected Traffic Warnings as SW-only Feature (eActros 600) — Awarded by MD & CEO, Daimler Truck India",
       file: "/assets/certificates/ACE-Trailblazer-Award.png",
       thumbnail: "/assets/certificates/ACE-Trailblazer-Award.png",
+    },
+    {
+      title:
+        "Consistent Effort & Reliability — Significant Contribution in Project Deliverables",
+      file: "/assets/certificates/Consistent-Effort-Deliverables.png",
+      thumbnail: "/assets/certificates/Consistent-Effort-Deliverables.png",
     },
     {
       title:

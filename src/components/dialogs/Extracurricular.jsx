@@ -81,7 +81,7 @@ export default function Extracurricular() {
       icon: <FaMicrophoneAlt className="text-purple-600 text-lg" />,
       items: [
         {
-          title: "Josephest Qawwali Competition — 3rd Oct 2015",
+          title: "Josephest Qawwali Competition — Third Place",
           file: "/assets/extracurricular/Josephest-Qawwali-2015.pdf",
           thumbnail: "/assets/extracurricular/Josephest-Qawwali-2015.png",
           date: "03.10.2015",
