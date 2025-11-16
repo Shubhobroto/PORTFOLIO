@@ -18,7 +18,7 @@ export default function Projects() {
       description:
         "A lightweight URL-shortening service built using the Shrtco API. The app sends long URLs as parameters to the API and instantly returns a shortened, shareable link. Built with clean API integration and responsive UI.",
       github: "https://github.com/Shubhobroto/url-shortener",
-      live: "#", // placeholder
+      live: "https://url-shortner-shubho.netlify.app/",
       date: "2022-10",
     },
     {
@@ -27,7 +27,7 @@ export default function Projects() {
       description:
         "A real-time chat application built with Node.js and Socket.IO implementing event-driven communication through topic-based subscriptions. Supports instant messaging, presence updates, and live event monitoring.",
       github: "https://github.com/Shubhobroto/Real-Time-Chat-App",
-      live: "#", // placeholder
+      live: "https://real-time-chat-app-862s.onrender.com/",
       date: "2022-07",
     },
     {
@@ -36,7 +36,7 @@ export default function Projects() {
       description:
         "A seamless file-sharing system where users can upload files and instantly receive a shareable download link. Built with Node.js and Express following a scalable REST architecture for real-time file access.",
       github: "https://github.com/Shubhobroto/File-Sharing-Application",
-      live: "#", // placeholder
+      live: "https://file-sharing-application-production.up.railway.app/",
       date: "2022-07",
     },
   ];
