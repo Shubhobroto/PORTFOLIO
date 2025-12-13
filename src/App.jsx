@@ -128,7 +128,7 @@ export default function App() {
             icon={<FaUsers />}
             label="Work Experience"
             onClick={(el) =>
-              openDialogFromElement(el, "Wrork Experience", <WorkExperience />)
+              openDialogFromElement(el, "Work Experience", <WorkExperience />)
             }
           />
 
