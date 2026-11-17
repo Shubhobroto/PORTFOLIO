@@ -6,6 +6,12 @@ export default function Achievements() {
   const daimlerCertificates = [
     {
       title:
+        "Stellar Achiever Award (IGNITE) — Driving Key CTW Features and Leading Map Development — Daimler Truck Innovation Center India",
+      file: "/assets/certificates/Stellar-Achiever-Award.png",
+      thumbnail: "/assets/certificates/Stellar-Achiever-Award.png",
+    },
+    {
+      title:
         "ACE - Trailblazer Award — Connected Traffic Warnings as SW-only Feature (eActros 600) — Awarded by MD & CEO, Daimler Truck India",
       file: "/assets/certificates/ACE-Trailblazer-Award.png",
       thumbnail: "/assets/certificates/ACE-Trailblazer-Award.png",

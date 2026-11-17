@@ -21,7 +21,7 @@ export default function Me({ openDialogFromElement }) {
       title: "Work Experience",
       icon: "💼",
       description:
-        "I specialize in building scalable, cloud-native systems with a focus on distributed design, performance tuning, and end-to-end ownership.",
+        "I build scalable, cloud-native systems with a focus on real-time data, distributed design, performance tuning, and end-to-end ownership, from ingestion to the map UI.",
       dialogComponent: <WorkExperience />,
       clickable: true,
     },
@@ -29,7 +29,7 @@ export default function Me({ openDialogFromElement }) {
       title: "Projects",
       icon: "💻",
       description:
-        "Designed and developed several projects combining backend APIs, frontend interfaces, and cloud deployments.",
+        "System-design projects (real-time ride matching, saga-based order processing with Kafka) alongside earlier full-stack builds.",
       dialogComponent: <Projects />,
       clickable: true,
     },
@@ -56,11 +56,12 @@ export default function Me({ openDialogFromElement }) {
           </h1>
 
           <p className="text-sm sm:text-base text-gray-700 leading-relaxed max-w-xl mx-auto lg:mx-0">
-            I’m a Software Engineer passionate about designing scalable systems
-            and solving complex computer-science problems. With hands-on
-            experience across backend, frontend, and cloud infrastructure, I
-            focus on performance optimization, system reliability, and elegant
-            engineering solutions.
+            I’m a Software Engineer who builds real-time, event-driven backend
+            systems and the maps and dashboards on top of them. At Daimler Truck
+            I own the live truck traffic feature, from Event Hub ingestion and
+            map matching to the React + MapLibre view. I care about performance,
+            correctness under retries and failures, and measuring before
+            optimizing.
           </p>
         </div>
 

@@ -95,12 +95,14 @@ export default function GitHubProfile() {
           I'm a <strong>Full Stack Software Engineer @ Daimler Truck AG</strong>,
           currently contributing to the{" "}
           <strong>Connected Traffic Warnings</strong> project — developing
-          real-time systems that enhance driver safety and vehicle intelligence.
+          real-time systems that enhance driver safety and vehicle intelligence,
+          including the live truck traffic feature.
         </p>
         <p className="text-sm text-gray-600 leading-relaxed">
-          Skilled in <code>Java Spring Boot</code>, <code>PostgreSQL</code>, and{" "}
-          <code>React</code>, I love building production-grade systems that
-          merge robust backends with dynamic, interactive frontends.
+          Skilled in <code>Java Spring Boot</code>, <code>Kafka</code>,{" "}
+          <code>Redis</code>, <code>PostgreSQL</code>, and <code>React</code>, I
+          love building production-grade systems that merge robust backends with
+          dynamic, interactive frontends.
         </p>
       </div>
 

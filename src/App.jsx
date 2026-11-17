@@ -369,7 +369,7 @@ export default function App() {
               onClick={(el) =>
                 openDialogFromElement(
                   el,
-                  "Wrork Experience",
+                  "Work Experience",
                   <WorkExperience />
                 )
               }

@@ -1,17 +1,33 @@
 // src/components/dialogs/Projects.jsx
 import React from "react";
 import {
-  FaLink,
   FaGithub,
-  FaCode,
   FaRocket,
   FaExchangeAlt,
   FaComments,
   FaFileUpload,
+  FaCar,
+  FaProjectDiagram,
 } from "react-icons/fa";
 
 export default function Projects() {
   const projects = [
+    {
+      title: "Real-Time Ride-Matching Service",
+      icon: <FaCar className="text-orange-600 text-3xl" />,
+      description:
+        "A real-time ride-matching backend. Redis GEOSEARCH finds the nearest available drivers, and offers go to one driver at a time over WebSockets with a 10-second deadline. Accept, reject and timeout race on an atomic Redis claim backed by conditional SQL updates, so a ride is never assigned twice. RabbitMQ with idempotent consumers, retries and a dead-letter queue keeps it safe under failures.",
+      github: "https://github.com/Shubhobroto/Uber-System",
+      date: "2025-03",
+    },
+    {
+      title: "Resilient Order Processing Platform",
+      icon: <FaProjectDiagram className="text-teal-600 text-3xl" />,
+      description:
+        "Three microservices (order, inventory, payment) that place an order, reserve stock and charge a wallet without a distributed transaction. An orchestrated saga over Kafka with compensation and timeouts, a transactional outbox and inbox, and idempotent consumers keep data consistent through duplicates, reordering and failures.",
+      github: "https://github.com/Shubhobroto/resilient-order-system",
+      date: "2026-11",
+    },
     {
       title: "URL Shortener Web App",
       icon: <FaExchangeAlt className="text-blue-600 text-3xl" />,
@@ -51,8 +67,9 @@ export default function Projects() {
         Projects & Builds 🚀
       </h2>
       <p className="text-sm text-gray-600 text-center max-w-xl">
-        A collection of production-grade projects showcasing backend engineering,
-        real-time systems, and clean API design.
+        Backend and distributed-systems projects built to practise real-world
+        design problems: concurrency, retries, consistency across services and
+        clean API design.
       </p>
 
       {/* ---------- Project Cards ---------- */}
@@ -92,15 +109,17 @@ export default function Projects() {
                 <FaGithub /> Code
               </a>
 
-              {/* Live Link */}
-              <a
-                href={proj.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1 px-3 py-1.5 bg-blue-600 text-white text-xs rounded-md hover:bg-blue-700 transition"
-              >
-                <FaRocket /> Live
-              </a>
+              {/* Live Link (only for projects that have one) */}
+              {proj.live && (
+                <a
+                  href={proj.live}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1 px-3 py-1.5 bg-blue-600 text-white text-xs rounded-md hover:bg-blue-700 transition"
+                >
+                  <FaRocket /> Live
+                </a>
+              )}
             </div>
           </div>
         ))}
