@@ -18,6 +18,7 @@ export default function Projects() {
       description:
         "A real-time ride-matching backend. Redis GEOSEARCH finds the nearest available drivers, and offers go to one driver at a time over WebSockets with a 10-second deadline. Accept, reject and timeout race on an atomic Redis claim backed by conditional SQL updates, so a ride is never assigned twice. RabbitMQ with idempotent consumers, retries and a dead-letter queue keeps it safe under failures.",
       github: "https://github.com/Shubhobroto/Uber-System",
+      live: "https://ride-matching-shubho.netlify.app/",
       date: "2025-03",
     },
     {
@@ -26,6 +27,7 @@ export default function Projects() {
       description:
         "Three microservices (order, inventory, payment) that place an order, reserve stock and charge a wallet without a distributed transaction. An orchestrated saga over Kafka with compensation and timeouts, a transactional outbox and inbox, and idempotent consumers keep data consistent through duplicates, reordering and failures.",
       github: "https://github.com/Shubhobroto/resilient-order-system",
+      live: "https://resilient-order-shubho.netlify.app/",
       date: "2026-11",
     },
     {
