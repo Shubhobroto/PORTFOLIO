@@ -52,7 +52,7 @@ export default function Projects() {
       description:
         "A seamless file-sharing system where users can upload files and instantly receive a shareable download link. Built with Node.js and Express following a scalable REST architecture for real-time file access.",
       github: "https://github.com/Shubhobroto/File-Sharing-Application",
-      live: "https://file-sharing-application-production.up.railway.app/",
+      live: "https://file-sharing-shubho.onrender.com/",
       date: "2022-07",
     },
   ];
